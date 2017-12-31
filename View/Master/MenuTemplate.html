@@ -1,7 +1,7 @@
 {% extends "@Core/Master/MenuTemplate.html" %}
 
 {% block css %}
-    {% set theme = fsc.views.SettingsThemes.model.properties.theme %}
+    {% set theme = appSettings.get('bootswatch', 'theme') %}
     {% if theme == 'bootstrap' or theme == '' or theme == null %}
         {% set cssBs = 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}
     {% else %}

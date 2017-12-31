@@ -1,5 +1,7 @@
 {
     "bootswatch-themes": "Bootswatch themes",
     "theme": "Theme",
-    "themes": "Themes"
+    "themes": "Themes",
+    "bootswatch": "Bootswatch",
+    "navbar-theme": "Navbar theme"
 }

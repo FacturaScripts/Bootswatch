@@ -1,5 +1,7 @@
 {
     "bootswatch-themes": "Temas de Bootswatch",
     "theme": "Tema",
-    "themes": "Temas"
+    "themes": "Temas",
+    "bootswatch": "Bootswatch",
+    "navbar-theme": "Tema barra de menú"
 }

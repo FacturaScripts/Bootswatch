@@ -15,3 +15,12 @@
     <link rel="stylesheet" href="{{ css }}" />
     {% endfor %}
 {% endblock %}
+
+{% block navbar %}
+{% set navbarTheme = appSettings.get('bootswatch', 'navbar-theme') %}
+<nav class="navbar navbar-expand-lg {{ navbarTheme }} sticky-top d-print-none">
+    {% block navbarContent %}
+    {{ parent() }}
+    {% endblock %}
+</nav>
+{% endblock %}

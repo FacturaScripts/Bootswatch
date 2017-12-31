@@ -1,0 +1,17 @@
+{% extends "@Core/Master/MenuTemplate.html" %}
+
+{% block css %}
+    {% set theme = fsc.views.SettingsThemes.model.properties.theme %}
+    {% if theme == 'bootstrap' or theme == '' or theme == null %}
+        {% set cssBs = 'node_modules/bootstrap/dist/css/bootstrap.min.css' %}
+    {% else %}
+        {% set cssBs = 'Plugins/Bootswatch/node_modules/bootswatch/dist/' ~ theme ~ '/bootstrap.min.css' %}
+    {% endif %}
+    <link rel="stylesheet" href="{{ cssBs }}" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="Core/Assets/CSS/datepicker.css" />
+    <link rel="stylesheet" href="Core/Assets/CSS/custom.css" />
+    {% for css in fsc.assets['css'] %}
+    <link rel="stylesheet" href="{{ css }}" />
+    {% endfor %}
+{% endblock %}

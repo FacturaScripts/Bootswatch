@@ -1,0 +1,23 @@
+{
+  "name": "facturascripts-bootswatch",
+  "version": "1.0.0",
+  "description": "Collection themes from Bootswatch",
+  "keywords": [
+    "facturascripts",
+    "plugin",
+    "bootswatch",
+    "theme"
+  ],
+  "author": "Carlos García Gómez <carlos@facturascripts.com>",
+  "contributors": [
+    "Francesc Pineda Segarra <francesc.pineda.segarra@gmail.com>"
+  ],
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/FacturaScripts/Bootswatch/issues"
+  },
+  "homepage": "https://github.com/FacturaScripts/Bootswatch",
+  "dependencies": {
+    "bootswatch": "4.0.0-beta.2"
+  }
+}

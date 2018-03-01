@@ -1,7 +1,11 @@
 {
   "name": "facturascripts-bootswatch",
   "version": "1.0.0",
-  "description": "Collection themes from Bootswatch",
+  "description": "Bootswatch theme collection for FacturaScripts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacturaScripts/Bootswatch.git"
+  },
   "keywords": [
     "facturascripts",
     "plugin",
@@ -18,6 +22,6 @@
   },
   "homepage": "https://github.com/FacturaScripts/Bootswatch",
   "dependencies": {
-    "bootswatch": "4.0.0-beta.2"
+    "bootswatch": "4.0.0"
   }
 }

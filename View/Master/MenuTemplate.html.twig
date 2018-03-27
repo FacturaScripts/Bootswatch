@@ -7,20 +7,17 @@
     {% else %}
         {% set cssBs = 'Plugins/Bootswatch/node_modules/bootswatch/dist/' ~ theme ~ '/bootstrap.min.css' %}
     {% endif %}
-    <link rel="stylesheet" href="{{ cssBs }}" />
-    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="Core/Assets/CSS/datepicker.css" />
-    <link rel="stylesheet" href="Core/Assets/CSS/custom.css" />
-    {% for css in fsc.assets['css'] %}
-    <link rel="stylesheet" href="{{ css }}" />
-    {% endfor %}
+    <link rel="stylesheet" href="{{ asset(cssBs) }}" />
+    <link rel="stylesheet" href="{{ asset('node_modules/font-awesome/css/font-awesome.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('node_modules/jquery-ui-dist/jquery-ui.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('Dinamic/Assets/CSS/custom.css') }}" />
 {% endblock %}
 
 {% block navbar %}
-{% set navbarTheme = appSettings.get('bootswatch', 'navbar-theme') %}
-<nav class="navbar navbar-expand-lg {{ navbarTheme }} sticky-top d-print-none">
-    {% block navbarContent %}
-    {{ parent() }}
-    {% endblock %}
-</nav>
+    {% set navbarTheme = appSettings.get('bootswatch', 'navbar-theme') %}
+    <nav class="navbar navbar-expand-lg {{ navbarTheme }} sticky-top d-print-none">
+        {% block navbarContent %}
+            {{ parent() }}
+        {% endblock %}
+    </nav>
 {% endblock %}

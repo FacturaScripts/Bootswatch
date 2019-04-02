@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <view>
     <columns>
-        <group name="theme" title="bootswatch-themes" numcolumns="12" icon="fa-puzzle-piece fa-lg">
+        <group name="theme" title="bootswatch-themes" numcolumns="12" icon="fas fa-puzzle-piece">
             <column name="name" display="none" order="0">
                 <widget type="text" fieldname="name" readonly="true" required="true" />
             </column>
